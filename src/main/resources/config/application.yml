@@ -1,0 +1,38 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+#
+# More information on profiles: https://jhipster.github.io/profiles/
+# More information on configuration properties: https://jhipster.github.io/common-application-properties/
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+  application:
+    name: iam-sample-api
+
+server:
+    port: 8082
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: UyfDuAcKSjT8A2iC41EZRpRiZxIa
+      clientSecret: gNgU7tWzRTfzdssofY4sJBi5UgMa
+      accessTokenUri: https://localhost:9443/oauth2/token
+      userAuthorizationUri: https://localhost:9443/oauth2/authorize
+      clientAuthenticationScheme: header
+      scope: openid
+      autoApprove: true
+      use-current-uri: true
+    resource:
+      user-info-uri: https://localhost:9443/oauth2/userinfo?schema=openid
+      prefer-token-info: false

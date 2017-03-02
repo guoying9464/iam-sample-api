@@ -1,0 +1,4 @@
+com/huawei/hic/so/iam/Application.class
+com/huawei/hic/so/iam/web/rest/DemoController.class
+com/huawei/hic/so/iam/config/WebSecurityConfigurer.class
+com/huawei/hic/so/iam/config/WebConfigurer.class

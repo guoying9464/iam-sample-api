@@ -1,0 +1,9 @@
+# ===================================================================
+# Spring Cloud Config bootstrap configuration for the "dev" profile
+# ===================================================================
+
+spring:
+    cloud:
+        config:
+            uri: http://admin:admin@localhost:8761/config
+            name: iam-sample-sso
